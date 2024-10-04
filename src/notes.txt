@@ -1,0 +1,36 @@
+dans la boucle principale, on attend de recevoir des logs
+Quand on en recoit un, on prend la date actuelle
+et on ajoute dans la hashtable un nouveau hashtableelement
+
+dans le log on a juste le contenu/rawdata (pas sur de si il faut faire une modif)
+et peut etre l ip ? ou alors il faudra la capter, ça on verra
+
+on créé hashtable au début, puis boucle infini (attente passive ou active on verra)
+
+on hash la rawdata
+
+"A PHP function is responsible for translating the
+raw data into the captured digital information."
+
+on va utiliser MD5 pour le hashage
+
+but : faire une boucle qui capte des logs, prend les logs, les mets dans la hashtable qui est recopiée dans un fichier annexe (comme un log)
+
+comment tester le captage ? Faire un premier jet avec un terminal ? 
+Il me faut la représentation des logscomment recuperer l ip ?
+
+Pour lire en boucle le fichier de log, on va utiliser watchservice, et pour prendre le nouveau log, on prend RandomAccessFile
+
+
+
+differentes commandes 
+
+exit, quit
+watch -> lance la surveillance d'un fichier (de log), et ajoute la LogHashTable ainsi que le chemin vers le fichier dans une autre hashTable(afin de garder le fil)
+save [chemin vers log ; all] va sauvegarder la loghashtable du fichier, ou toutes celle actuellement créées. Si le fichier log n'a pas de hastable renvoie une erreur
+load Same
+write Same
+mix
+
+
+regarder beats agent
