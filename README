@@ -29,10 +29,6 @@ The goal of this program is to collect logs from different logFiles on several m
 -Creating a database on the center machine called "FiveGProjectDatabase", and update the username and password in DatabaseConnection.
 
 
-## Installation 
-
-
-
 
 ## Utilisation 
 
