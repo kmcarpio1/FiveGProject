@@ -1,0 +1,5 @@
+*.class
+dist/
+logfile/
+files/
+src/config/config.ini
