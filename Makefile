@@ -121,4 +121,5 @@ create_logfile:
 
 #to launch a server to watch the database
 display_database:
+	sudo chmod +x ./display_database.sh
 	./display_database.sh
